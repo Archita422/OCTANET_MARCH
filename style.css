@@ -1,0 +1,201 @@
+
+*{
+    margin:0;padding:0;
+    box-sizing:border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    outline:none;border:none;
+    text-decoration:none;
+    transition:.2s;
+}
+html{
+    font-size:62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x:hidden;
+}
+section{
+    padding:2rem 9%;
+}
+.heading{
+    text-align: center;
+    font-size: 1.5vw;
+    color:palevioletred;
+    padding: 1rem;
+    margin: 2rem 0;
+    background-color: rgba(255,51,153,.05);
+}
+.btn{
+    display:inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: black;
+    color:bisque;
+    font-size:1.7rem;
+    padding: .9rem 3.5rem;
+
+}
+.btn:hover{
+    background: purple;
+}
+header{
+    position: fixed;
+    top:0;left:0;right:0;
+    background-color: white;
+    padding:2rem 9%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index:1000;
+    box-shadow: 0 .1rem .1rem rgba(0,0,0.1);
+ 
+
+}
+.logo {
+    font-size: 2rem;
+    color:teal;
+    font-weight: bolder;
+    font-family: cursive;
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding:0 1.5rem;
+    color:#666;
+   
+}
+header{
+    background-color: lavender;
+}
+header .navbar a:hover{
+color:palevioletred;
+}
+.icons  {
+    font-size: 1.5vw;
+    color:#333;
+    margin-left:2rem;
+}
+.icons i:hover{
+    color:pink;
+}
+@media(max-width:991px){
+    html{
+        font-size:55%;
+       
+    }
+    header{
+        padding:2rem;
+    }
+
+}
+@media(max-width:768px)
+    {
+header.ri-menu-fill{
+    display:block;
+}
+header.navbar{
+    position: absolute;
+    top:100%;left:0;right:0;
+    border-top: .1rem solid black;
+    clip-path: polygon(0 0,100% 0,100% 0,0 0);
+    
+}
+ #x:checked~.navbar{
+    clip-path: polygon(0 0,100% 0,100% 0,0 0);
+
+}
+header.navbar a{
+ margin:1.5rem;
+ padding:1.5rem;
+ background-color: blanchedalmond;
+ border:.1rem solid black;
+ display: block;
+}
+.heading{
+    font-size:3vh;
+}
+
+
+    }
+.home{
+    display:flex;
+    align-items:center;
+    min-height:100vh;
+    background:url(https://tourandtakein.com/wp-content/uploads/2020/03/Maldives2.gif);
+    background-size: cover;
+    background-position: center;
+    animation:bgChange 20s linear infinite;
+}
+@keyframes bgChange {
+    0%{
+        background-image: url(https://tourandtakein.com/wp-content/uploads/2020/03/Maldives2.gif);
+    }
+    20%{
+        background-image: url(https://tourandtakein.com/wp-content/uploads/2020/03/Maldives2.gif);
+    }
+    25%{
+        background-image: url(https://www.pocketwanderings.com/wp-content/uploads/2021/01/Spiez-1.jpg)}
+    45%{
+        background-image: url(https://www.pocketwanderings.com/wp-content/uploads/2021/01/Spiez-1.jpg);
+    }
+    50%{
+        background-image: url(https://miami-consultants.com/media/Paris-gallery/original/paris-images-2-.jpg);
+    }
+    70%{
+        background-image: url(https://miami-consultants.com/media/Paris-gallery/original/paris-images-2-.jpg);
+    }
+    }
+
+.content{
+    max-width:50rem;
+}
+.content h3{
+    font-size: 2vw;
+    color:black
+}
+.content p{
+    font-size: 1vw;
+    color:#333;
+    font-weight: bolder;
+    padding:1rem 0;
+    line-height: 1.5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.row{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+.video-container{
+    flex:1 1 40rem;
+    position: relative;
+}
+.video-container video{
+    width:100%;
+    border: 1.5em solid white;
+    border-radius: 1.5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    height:100%;
+    object-fit: cover;
+}
+.content{
+    flex:1 1 40rem;
+
+}
+
+.video-container h3{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    padding:2rem 3rem 2rem 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    mix-blend-mode: screen;
+}
+.about{
+    background-color:#FFEAFC;
+}
+ 
