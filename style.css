@@ -1,201 +1,119 @@
-
 *{
-    margin:0;padding:0;
+    margin:0;
+    padding:0;
     box-sizing:border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    outline:none;border:none;
-    text-decoration:none;
-    transition:.2s;
 }
-html{
-    font-size:62.5%;
-    scroll-behavior: smooth;
-    scroll-padding-top: 6rem;
-    overflow-x:hidden;
-}
-section{
-    padding:2rem 9%;
-}
-.heading{
-    text-align: center;
-    font-size: 1.5vw;
-    color:palevioletred;
-    padding: 1rem;
-    margin: 2rem 0;
-    background-color: rgba(255,51,153,.05);
-}
-.btn{
-    display:inline-block;
-    margin-top: 1rem;
-    border-radius: 5rem;
-    background: black;
-    color:bisque;
-    font-size:1.7rem;
-    padding: .9rem 3.5rem;
-
-}
-.btn:hover{
-    background: purple;
+body{
+    background-image:url(https://www.freevector.com/uploads/vector/preview/18866/35-01.jpg);
+    background-size: 100%;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 header{
-    position: fixed;
-    top:0;left:0;right:0;
-    background-color: white;
-    padding:2rem 9%;
+    width: 100%;
+    position:sticky;
+    top:0;
+    z-index: 1;
+    background: transparent;
+}
+.container{
+    height:10vw;
+    width:100%;
+    margin:0 auto;
+    padding:0 50px;
+
+}
+.logo{
     display:flex;
     align-items: center;
-    justify-content: space-between;
-    z-index:1000;
-    box-shadow: 0 .1rem .1rem rgba(0,0,0.1);
- 
-
+    gap:14px;
 }
-.logo {
-    font-size: 2rem;
-    color:teal;
-    font-weight: bolder;
-    font-family: cursive;
-}
-
-header .navbar a{
-    font-size: 2rem;
-    padding:0 1.5rem;
-    color:#666;
-   
-}
-header{
-    background-color: lavender;
-}
-header .navbar a:hover{
-color:palevioletred;
-}
-.icons  {
-    font-size: 1.5vw;
-    color:#333;
-    margin-left:2rem;
-}
-.icons i:hover{
-    color:pink;
-}
-@media(max-width:991px){
-    html{
-        font-size:55%;
-       
-    }
-    header{
-        padding:2rem;
-    }
-
-}
-@media(max-width:768px)
-    {
-header.ri-menu-fill{
-    display:block;
-}
-header.navbar{
-    position: absolute;
-    top:100%;left:0;right:0;
-    border-top: .1rem solid black;
-    clip-path: polygon(0 0,100% 0,100% 0,0 0);
+.logo img{
+    height: 2vw;
+    width:2vw;
+    margin-top: -100px;
     
 }
- #x:checked~.navbar{
-    clip-path: polygon(0 0,100% 0,100% 0,0 0);
-
+.logo p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:20px;
+    font-weight: 600;
+    cursor: default;
+    color:white;
+    margin-top: -100px;
+    
 }
-header.navbar a{
- margin:1.5rem;
- padding:1.5rem;
- background-color: blanchedalmond;
- border:.1rem solid black;
- display: block;
+a{  margin-right: 10px;
+    text-decoration: none;
+    color:white;
 }
-.heading{
-    font-size:3vh;
-}
-
-
-    }
-.home{
-    display:flex;
-    align-items:center;
-    min-height:100vh;
-    background:url(https://tourandtakein.com/wp-content/uploads/2020/03/Maldives2.gif);
-    background-size: cover;
-    background-position: center;
-    animation:bgChange 20s linear infinite;
-}
-@keyframes bgChange {
-    0%{
-        background-image: url(https://tourandtakein.com/wp-content/uploads/2020/03/Maldives2.gif);
-    }
-    20%{
-        background-image: url(https://tourandtakein.com/wp-content/uploads/2020/03/Maldives2.gif);
-    }
-    25%{
-        background-image: url(https://www.pocketwanderings.com/wp-content/uploads/2021/01/Spiez-1.jpg)}
-    45%{
-        background-image: url(https://www.pocketwanderings.com/wp-content/uploads/2021/01/Spiez-1.jpg);
-    }
-    50%{
-        background-image: url(https://miami-consultants.com/media/Paris-gallery/original/paris-images-2-.jpg);
-    }
-    70%{
-        background-image: url(https://miami-consultants.com/media/Paris-gallery/original/paris-images-2-.jpg);
-    }
-    }
-
-.content{
-    max-width:50rem;
-}
-.content h3{
-    font-size: 2vw;
-    color:black
-}
-.content p{
-    font-size: 1vw;
-    color:#333;
-    font-weight: bolder;
-    padding:1rem 0;
-    line-height: 1.5;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.row{
+ul{
+    list-style: none;
     display: flex;
-    align-items: center;
-    gap:2rem;
-    flex-wrap: wrap;
-    padding: 2rem 0;
-    padding-bottom: 3rem;
+    gap: 14px;
 }
-.video-container{
-    flex:1 1 40rem;
-    position: relative;
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
 }
-.video-container video{
+li{
+    font-size: 20px;
+}
+.main{
     width:100%;
-    border: 1.5em solid white;
-    border-radius: 1.5rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    height:100%;
-    object-fit: cover;
+    height:90vh;
+    position:absolute;
+}
+.main img{
+    display: block;
+    margin: auto;
+    height: 100%;
+    filter:drop-shadow(20px 20px 40px black);
 }
 .content{
-    flex:1 1 40rem;
-
-}
-
-.video-container h3{
+    width:100%;
+    height:100%;
+    display:block;
     position: absolute;
-    top: 50%;
-    left: 15%;
-    padding:2rem 3rem 2rem 3rem;
-    text-align: center;
-    font-size: 1.5rem;
-    color: white;
-    mix-blend-mode: screen;
+    top:0;
+    left:0;
+
 }
-.about{
-    background-color:#FFEAFC;
+.main .container{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width:300px;
+    margin:auto;
+    height:100%;
 }
- 
+.todo{
+    display: flex;
+    padding: 14px;
+    cursor:url(cursor.png)6 19,auto;
+
+}
+.todo_value{
+    cursor: inherit;
+    background: transparent;
+    border: none;
+    outline:none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    flex-grow: 1;
+    border-bottom: 2px solid brown;
+
+}
+.todo_checkbox{
+    cursor: inherit;
+
+}
+.todo:has(.todo_checkbox:checked){
+    color:brown;
+    background: rgba(0, 0, 0, 0.068);
+    text-decoration: line-through 1.5px;
+    
+}
